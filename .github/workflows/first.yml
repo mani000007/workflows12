@@ -1,0 +1,17 @@
+name: First-Workflow
+on: 
+  push: 
+     branches:
+       - main
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - name: setup python
+        uses: action/setup-python@v3
+        with:
+          python-version: 3.9
+      - name: build docker image
+        run: docker build -t mani000007/hi
+        
+
