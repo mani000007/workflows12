@@ -12,6 +12,7 @@ jobs:
       - name: Build docker image
         run: |
           docker build -t mani000007/hi .
+          docker push mani000007/hi
           docker run mani000007/hi
         
 
