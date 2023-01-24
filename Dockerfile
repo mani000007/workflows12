@@ -1,3 +1,3 @@
 FROM python:3.9
-ADD hi.python .
+ADD hi.py .
 CMD ["python","hi.py"]
