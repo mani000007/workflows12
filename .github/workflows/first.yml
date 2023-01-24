@@ -10,6 +10,8 @@ jobs:
       - name: setup python
         uses: actions/checkout@v3
       - name: Build docker image
-        run: docker build -t mani000007/hi .
+        run: |
+          docker build -t mani000007/hi .
+          docker run mani000007/hi
         
 
